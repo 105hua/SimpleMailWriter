@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AI E-Mail Writer</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <h1 class="title">E-Mail Writer</h1>
+
+        <div class="container">
+            <h2 class="subtitle">Please enter your Together AI Token:</h2>
+            <input
+                id="token"
+                class="text_input"
+                type="password"
+                placeholder="Enter your Together AI Token here..."
+            />
+
+            <h2 class="subtitle">What is your name?</h2>
+            <input
+                id="name"
+                class="text_input"
+                type="text"
+                placeholder="Enter your name here..."
+            />
+
+            <h2 class="subtitle">What is the name or company of your recipient?</h2>
+            <input
+                id="recipient"
+                class="text_input"
+                type="text"
+                placeholder="Enter the recipient's name here..."
+            />
+
+
+            <h2 class="subtitle">Now, write the goals of your E-Mail here:</h2>
+            <p class="goal_help">
+                It is highly recommended that you write your goals in bullet points, like so:<br />
+                - Goal 1<br />
+                - Goal 2<br />
+                - Goal 3
+            </p>
+            <textarea
+                id="email_goals"
+                class="input"
+                placeholder="Write the goals of your E-Mail here..."
+            ></textarea>
+
+            <button id="generate" class="button">Generate E-Mail</button>
+
+            <textarea
+                id="output"
+                class="input"
+                style="margin-top: 2rem;"
+                placeholder="Your E-Mail will appear here..."
+            ></textarea>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

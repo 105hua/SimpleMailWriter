@@ -1,4 +1,4 @@
-const hfTokenInputBox = document.getElementById("token");
+const togetherTokenInputBox = document.getElementById("token");
 const senderInputBox = document.getElementById("name");
 const recipientInputBox = document.getElementById("recipient");
 const emailGoalsInputBox = document.getElementById("email_goals");
@@ -23,7 +23,7 @@ window.onload = () => {
 
 generateButton.addEventListener("click", () => {
     outputBox.value = "Generating...";
-    const hfToken = hfTokenInputBox.value;
+    const hfToken = togetherTokenInputBox.value;
     const sender = senderInputBox.value;
     const recipient = recipientInputBox.value;
     const emailGoals = emailGoalsInputBox.value;
